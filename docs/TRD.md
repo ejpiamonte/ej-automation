@@ -1,7 +1,7 @@
 # Technical Requirements
 
 ## Implemented architecture
-Static HTML/CSS/JavaScript in `dist/`. Node's built-in HTTP module powers a loopback-only local preview on port 4173. No third-party runtime dependencies, build step, server integrations, AI calls, or database. The static website can be hosted independently of the showcased projects.
+Static HTML/CSS/JavaScript and image assets in `dist/`. `vercel.json` sets `outputDirectory` to `dist`. Node's built-in HTTP module powers a loopback-only local preview on port 4173. No third-party runtime dependencies, build step, server integrations, AI calls, or database. The static website can be hosted independently of the showcased projects. Owner-supplied DTSS screenshots are copied unchanged into `dist/images/dtss/`; the original `images/DTSS/` folder is Git-ignored.
 
 ## Behavior
 Theme preference uses browser localStorage with exception handling. Light mode is the default. IntersectionObserver reveals sections where supported; content remains visible without JavaScript or with reduced motion. Native dialog provides modal project notes and Escape support; closing restores focus to its trigger. External links use `noopener noreferrer`; dynamic text uses textContent.

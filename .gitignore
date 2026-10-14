@@ -3,5 +3,6 @@ node_modules/
 !.env.example
 .DS_Store
 *.tar.gz
+images/DTSS/
 
 preview-desktop.jpg
